@@ -47,7 +47,7 @@ const FormBuilder = () => {
         inputField = $(checkBoxFields);
 
         $el.append(newField);
-        newField = $(`<p id=${fieldId}><label>${fieldName}:  </label></p>`)
+        newField = $(`<p id=${fieldId}><label>${fieldName}:  </label></p>`);
 
       } else {
         // Create select field
@@ -82,7 +82,7 @@ const FormBuilder = () => {
           }
         }
 
-        newField = $(`<p id=${fieldId}><label>${fieldLabel}:  </label></p>`)
+        newField = $(`<p id=${fieldId}><label>${fieldLabel}:  </label></p>`);
       }
 
       // Append newly created form field to the form
