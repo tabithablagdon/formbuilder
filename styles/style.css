@@ -1,0 +1,17 @@
+body{
+  font-family:arial, sans-serif;;
+  color:#FFF;
+  background-color:black;
+  font-size:120%;
+}
+
+.testcase{
+  display:none;
+}
+
+#result, #spec{
+  margin:20px;
+  padding:10px;
+  border-radius: 5px;
+  border:1px solid green;
+}

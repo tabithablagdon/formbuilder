@@ -1,0 +1,22 @@
+{
+  "name": "formbuilder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browserify": "13.1.0"
+  },
+  "scripts": {
+    "start": "open index.html",
+    "build": "browserify js/formbuilder.js > js/bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  }
+}

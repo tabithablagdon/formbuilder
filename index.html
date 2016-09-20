@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Formbuilder</title>
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+
+    <h3>Hello World!</h3>
+    Your task is to flesh out the javascript formBuilder function to generate HTML forms dynamically from a JSON object
+    <ul>
+      <li>When submitted, all inputs should be validated according to the requirements defined in the input spec</li>
+      <li>Click run to execute the current function with one of the sample specs</li>
+      <li>Non-standard types (state, e.g.) can be supported with appropriate inputs if time allows</li>
+      <li>The focus here is not to demontrate a deep understanding of Javascript, but to build a tool with high code quality - well-organized, maintainable, highly flexible, modular.</li>
+      <li>Extra credit: Extract the form spec from the php style doc blocks in this html instead of using the JSON objects</li>
+    </ul>
+
+    <div>
+      <button data-sample='1'>Run 1</button>
+      <button data-sample='2'>Run 2</button>
+      <button data-sample='3'>Run 3</button>
+    </div>
+
+    <hr>
+    <div id='spec'>
+      <i>This div will display the currently-processed spec</i>
+    </div>
+    <br>Output:
+    <div id='result'>
+      <i>I sure wish I had a cool html form in me...</i>
+    </div>
+
+    <!--here are some test cases in docblock form-->
+    <div class='testcase' id='1'>
+      /** Comment Form
+         * Make a comment on the blog post!
+         * @param  string[100] title
+         * @param  email email
+         * @param  text body
+         * @param  bool subscribe Email me when someone comments on my comment!
+         */
+    </div>
+    <div class='testcase' id='2'>
+      /** Car Order Form
+         * Choose your car!
+         * @param  select[red,blue,green,black,white,taupe] color
+         * @param  checkbox[fog-lights,radio,a-c,wheels,headlights] options
+         * @param  string[7] [vanityPlate]
+         * @param  int price
+         */
+    </div>
+    <div class='testcase' id='3'>
+      /** New User Creator
+         * Create a new user account
+         * @param  string fname First Name
+         * @param  string lname Last Name
+         * @param  date dob Date of Birth
+         * @param  email{1,4} emails
+         * @param  string [addr1] Street Address
+         * @param  string[40] city
+         * @param  state state
+         * @param  int[0-99999] zipcode ZIP
+         */
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/bundle.js" type="text/javascript"></script>
+
+  </body>
+</html>
